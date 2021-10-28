@@ -120,6 +120,3 @@ public:
 
     }
 };
-int main() {
-
-}
