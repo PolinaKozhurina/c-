@@ -61,11 +61,23 @@ public:
         if (number > 0)
             delete[] p;
     }
-    void print(const char* objName)
+    void print()
     {
-        cout << "Object: " << objName << endl;
-        for (int i = 0; i < number; i++)
-            cout << p[i] << "\t";
+        cout << "Object: " << endl;
+        for (int i = 0; i < number; i++){
+            cout << p[i];
+            if(i<number-1)
+            cout<<",";}
         cout<< endl;
     }
 };
+int main(){
+    Queue first;
+    first.push(1);
+    first.push(2);
+    first.push(3);
+    first.push(4);
+    first.pop();
+    first.print();
+    return 0;
+}
