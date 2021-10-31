@@ -94,7 +94,6 @@ public:
                 else step =1;
           
         }
-          cout<<start<<endl<<stop<<endl<<step<<endl;
     }
     CSlice Slice(string slice) { //мб здесь сделать все таки CSlice? ок пока так
         Input(slice);
@@ -140,6 +139,7 @@ public:
         cout <<"]"<< endl;
 
     }
+     ~CSlice() {}
 };
 int main() {
     CSlice hate(6),final(1);
