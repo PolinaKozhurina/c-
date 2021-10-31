@@ -17,6 +17,9 @@ public:
         {
             size +=(slice[i] == ':');
         }
+        if (size>2){
+            cout<<"Error"<<endl;
+            exit(1);}
     }
     void Input(string slice) {
         int counter = 0;
