@@ -98,6 +98,11 @@ public:
     CSlice Slice(string slice) { //мб здесь сделать все таки CSlice? ок пока так
         Input(slice);
         CSlice final_line(0);
+        if (size == 0)
+        {
+            (final_line.line).emplace_back(line[stop]);
+        return final_line;
+        }
         if (step > 0){
         for (int i = start; i < stop; i += step) {
             (final_line.line).emplace_back(line[i]);
