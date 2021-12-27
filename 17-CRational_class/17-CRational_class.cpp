@@ -107,7 +107,7 @@ public:
 };
 int main() {
     CRational number1={0,0,1}, number2={0,0,1};
-    cout << "Enter a fraction in the format: integer numerator denominator\n***If the fraction is mixed, the whole fraction is 0.***\nFraction 1:";
+    cout << "Enter a fraction in the format: integer and fraction,that you want add numerator denominator\n***If the fraction is mixed, the whole fraction is 0.***\nFraction 1:";
     number1.input();
     cout << "Fraction 2:";
     number2.input();
